@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+:root {
+    /* fonts */
+    --primaryFont: 'Open Sans', sans-serif;
+    --secondaryFont: Arial, Helvetica, sans-serif;
+
+    /* colors */
+    --color01: #021a38;
+    --color02: #0460D9;
+    --color03: #327AD9;
+    --color04: #5E9FF2;
+    --color05: #89ABD9;
+    --color06: #F2F2F2;
+
+}
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-image: radial-gradient(farthest-corner at 40px 40px,  var(--color06), var(--color05));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav, footer {
+    background-image: linear-gradient(to bottom, var(--color03), var(--color04));
+    font-family: var(--primaryFont);
+    box-shadow: 0px 0px 3px 0px var(--color01);
+    /* background-color: var(--color04); */
+    height: 3.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a#initial-logo {
+    color: var(--color06);
+    font-size: 1.25em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.8s;
+}
+
+nav a#initial-logo:hover {
+    text-shadow: 0.03em 0.03em 0.2em var(--color01);
+}
+
+nav a#initial-logo img {
+    padding: 0.1em 0.7em 0.1em 1.3em;
+}
+
+nav ul, footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul:last-child {
+    margin-right: 1.8em;
+}
+
+nav ul li, footer ul li {
+    margin: 0em 1.5vw;
+    font-weight:100;
+}
+
+nav ul a, footer ul a {
+    font-size: 1.1em;
+    color: var(--color06);
+    text-decoration: none;
+}
+
+nav ul a:hover, footer ul a:hover {
+    text-shadow: 0.03em 0.03em 0.2em var(--color01);
+}
+
+main {
+    background-color: var(--color06);
+    box-shadow: 0px 0px 5px 0px var(--color01);
+    border-radius: 10px;
+    margin-top: 3.5em;
+    padding: 2em;
+    width: 90vw;
+    height: 1000px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    width: 100%;
+    height: 2em;
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer p {
+    color: var(--color06);
+}
