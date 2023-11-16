@@ -69,7 +69,7 @@
             <ul>
                 <a onclick="showMenu()" href="#initial">
                     <li>
-                        Inicio
+                        Início
                     </li>
                 </a>
                 <a onclick="showMenu()" href="#about">
@@ -92,12 +92,19 @@
     </header>
     <main>
         <section id="initial">
-            <picture>
-                <source media="(max-width: 750px)" srcset="images/photo-p.png" type="image/png">
-                <source media="(max-width: 1050px)" srcset="images/photo-m.png" type="image/png">
-                <img src="images/photo-g.png" alt="Imagem flexível">
-            </picture>
-            <button>Mais</button>
+            <div>
+                <picture>
+                    <source media="(max-width: 750px)" srcset="images/photo-p.png" type="image/png">
+                    <source media="(max-width: 1050px)" srcset="images/photo-m.png" type="image/png">
+                    <img src="images/photo-g.png" alt="Foto Autor">
+                </picture>
+                <h1>Giovanni Billa</h1>
+                <h2>Desenvolvedor Web</h2>
+            </div>
+            <div>
+                <a href="documents/giovanni-billa-cv.pdf" target="_blank" class="button">Download CV</a>
+                <a href="mailto:giovanni.billa01@gmail.com" class="button">Contato</a>
+            </div>
         </section>
         <section id="about">
             <h1>Sobre</h1>
@@ -109,44 +116,38 @@
             <article>
                 <h2>Artigo</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem blanditiis quod id, ullam, eaque laborum veniam officia aliquid exercitationem est earum nesciunt, provident obcaecati tenetur maiores totam vero minus beatae!
+                    Apaixonado por lógica de programação e desenvolvimento de sistemas, boa comunicação e engajamento para trabalho em equipe.
                 </p>
             </article>
         </section>
-        <section>
+        <section id="projects">
             <h1>Projetos</h1>
             <a href="projects/bfp-test/" target="_self" rel="next">BFP Test Project</a>
             <a href="https://giovannibilla01.github.io/responsive-website/" target="_blank" rel="external">Responsive Website</a>
             <a href="https://giovannibilla01.github.io/login-page-ccs-html/" target="_blank" rel="external">Responsive Login Page</a>
         </section>
-        <section>
+        <section id="skills">
             <h1>Habilidades</h1>
-            <h2>Hard Skills</h2>
-            <h3>Tecnologias</h3>
-            <i class="devicon-csharp-plain"></i>
-            <i class="devicon-csharp-plain colored"></i>
-            <i class="devicon-php-plain"></i>
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-laravel-plain-wordmark"></i>
-            <i class="devicon-laravel-plain-wordmark colored"></i>
-            <i class="devicon-mysql-plain-wordmark"></i>
-            <i class="devicon-mysql-plain-wordmark colored"></i>
-            <i class="devicon-html5-plain-wordmark"></i>
-            <i class="devicon-html5-plain-wordmark colored"></i>
-            <i class="devicon-css3-plain-wordmark"></i>
-            <i class="devicon-css3-plain-wordmark colored"></i>
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-git-plain-wordmark"></i>
-            <i class="devicon-git-plain-wordmark colored"></i>
-            <h3>Outros</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores deleniti veniam id repellendus, assumenda hic dolorem necessitatibus perferendis. Fuga odit ab quam molestiae esse omnis incidunt cupiditate odio maiores. Corporis!
-            </p>
-            <h2>Soft Skills</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, ratione sed. Totam assumenda ratione reiciendis alias fugiat in, quas sequi quibusdam expedita quos! Possimus vero hic aliquid, dolorem odio dolor!
-            </p>
+            <div>
+                <h2>Hard Skills</h2>
+                <h3>Tecnologias</h3>
+                <ul id="technologies">
+                    <li><i class="devicon-csharp-plain"></i></li>
+                    <li><i class="devicon-php-plain"></i></li>
+                    <li><i class="devicon-laravel-plain-wordmark"></i></li>
+                    <li><i class="devicon-mysql-plain-wordmark"></i></li>
+                    <li><i class="devicon-html5-plain-wordmark"></i></li>
+                    <li><i class="devicon-css3-plain-wordmark"></i></li>
+                    <li><i class="devicon-javascript-plain"></i></li>
+                    <li><i class="devicon-git-plain-wordmark"></i></li>
+                </div>
+            </div>
+            <div>
+                <h2>Soft Skills</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, ratione sed. Totam assumenda ratione reiciendis alias fugiat in, quas sequi quibusdam expedita quos! Possimus vero hic aliquid, dolorem odio dolor!
+                </p>
+            </div>
         </section>
     </main>
     <footer>
