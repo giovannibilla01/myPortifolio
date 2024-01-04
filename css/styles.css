@@ -214,6 +214,25 @@ main section#initial div h2 {
     color: #00000080;
 }
 
+main section#initial div a#download-cv { display: flex; }
+main section#initial div a#contact { display: flex; }
+main section#initial div a#linkedin { display: none; }
+main section#initial div a#github { display: none; }
+main section#initial div a#email { display: none; }
+
+main section#about {
+    padding-top: 0;
+    min-height: 100vh;
+}
+main section#about div#background-track {
+    height: 17vh;
+    width: 100vw;
+    
+    background: var(--color01) url(/images/background-track-mobile.jpg) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
 main section#skills ul#technologies {
     list-style: none;
     columns: 2;
