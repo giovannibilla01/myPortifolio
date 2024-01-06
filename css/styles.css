@@ -203,6 +203,7 @@ main section div {
 }
 
 main section#initial div img {
+    width: 55vw;
     border-radius: 50%;
 }
 
@@ -225,19 +226,28 @@ main section#initial div a#email { display: none; }
 main section#about {
     padding-top: 0;
     min-height: 100vh;
+
+    justify-content: flex-start;
 }
 
 main section#about div#background-track {
     height: 17vh;
     width: 100vw;
+
+    margin-top: 3em;
     
     background: var(--color01) url(/images/background-track-mobile.jpg) no-repeat;
     background-size: cover;
     background-position: center bottom;
 }
 
+main section#about h1 {
+    margin: 2em;
+}
+
 main section#projects div {
    width: 100%;
+   max-width: 230px;
 }
 
 main section#projects div h3, a {
@@ -245,7 +255,18 @@ main section#projects div h3, a {
     font-size: 0.7em;
 }
 
-main section#projects div div.projects {
+main section#projects div {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main section#projects div div.project-box {
+    justify-content: center;
+}
+
+main section#projects div div div.projects {
     height: 15vh;
     width: 100%;
     border-radius: 10px 10px 0px 0px;
@@ -259,11 +280,11 @@ main section#projects div div.projects {
     background-position: center top;
 }
 
-main section#projects div div.projects * {
+main section#projects div div div.projects * {
     display: none;
 }
 
-main section#projects div div.projects-link {
+main section#projects div div div.projects-link {
     height: 5vh;
     width: 100%;
     border-radius: 0px 0px 10px 10px;
@@ -305,5 +326,71 @@ footer p {
     color: var(--color06);
 }
 
+/* Tablets */
+@media screen and (min-width: 426px) and (max-width: 769px) {
+    .button {
+        width: 180px;
+        font-size: 1.3em;
+    }
 
-/* background-image: radial-gradient(farthest-corner at 40px 40px,  var(--color06), var(--color05)); */
+    h1 {
+        font-size: 2.2em;
+    }
+
+    header nav p {
+        font-size: 1.6em;
+    }
+
+    main section#initial {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    main section#initial div img {
+        width: 30vw;
+    }
+    
+    main section#initial div h1 {
+        font-size: 2.2em;
+    }
+    
+    main section#initial div h2 {
+        font-size: 1.2em;
+    }
+    
+    main section#initial div a#linkedin { display: flex; }
+    main section#initial div a#github { display: flex; }
+    main section#initial div a#email { display: flex; }
+
+    main section#projects div#project-container {
+        background-color: aqua;
+    }
+}
+
+/* Screen Computers */
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+    main {
+        background-color: rgb(201, 0, 0);
+    }
+}
+
+/* Large Screen Computers */
+@media screen and (min-width: 1025px) and (max-width: 1441px) {
+    main {
+        background-color: rgb(0, 54, 201);
+    }
+}
+
+/* 4k */
+@media screen and (min-width: 1441px) and (max-width: 2561px) {
+    main {
+        background-color: rgb(17, 201, 0);
+    }
+}
+
+/* Television */
+@media screen and (min-width: 2561px) {
+    main {
+        background-color: rgb(201, 0, 201);
+    }
+}
