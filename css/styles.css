@@ -232,7 +232,7 @@ main section#about {
 
 main section#about div#background-track {
     height: 17vh;
-    width: 100vw;
+    width: 97vw;
 
     margin-top: 3em;
     
@@ -318,6 +318,10 @@ main section#skills div ul li i:hover {
     cursor: pointer;
 }
 
+main section#skills div div#skill-desc {
+    display: none;
+}
+
 footer {
     width: 100%;
     height: 2em;
@@ -384,36 +388,73 @@ footer p {
 /* Screen Computers */
 @media screen and (min-width: 769px) {
     main {
-        background-color: rgb(201, 0, 0);
+        width: 80vw;
     }
 
     header nav ul {
         display: flex;
     }
 
+    header nav ul a {
+        font-size: 1.4em;
+    }
+
     header nav span#burger-menu {
         display: none;
+    }
+
+    main section#about div#background-track {
+        height: 20vh;
+        width: 98vw;
+        
+        background: var(--color01) url(../images/background-track-device.jpg) no-repeat;
+        background-size: cover;
+        background-position: right bottom;
     }
     
 }
 
 /* Large Screen Computers */
-@media screen and (min-width: 1025px) and (max-width: 1441px) {
+@media screen and (min-width: 1025px) {
+
     main {
-        background-color: rgb(0, 54, 201);
+        width: 75vw;
     }
+
+    main section#initial {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main section#about div#background-track {
+        height: 22vh;
+        
+        background: var(--color01) url(../images/background-track-full.jpg) no-repeat;
+        background-size: cover;
+        background-position: right bottom;
+    }
+
 }
 
 /* 4k */
-@media screen and (min-width: 1441px) and (max-width: 2561px) {
-    main {
-        background-color: rgb(17, 201, 0);
+@media screen and (min-width: 1441px) {
+
+    main section#skills ul#technologies {
+        columns: 4;
+    }
+
+    main section#about {
+        min-height: 75vh;
     }
 }
 
 /* Television */
 @media screen and (min-width: 2561px) {
     main {
-        background-color: rgb(201, 0, 201);
+        width: 60vw;
+    }
+
+    main section#initial div img {
+        width: 20vw;
     }
 }
