@@ -236,7 +236,7 @@ main section#about div#background-track {
 
     margin-top: 3em;
     
-    background: var(--color01) url(/images/background-track-mobile.jpg) no-repeat;
+    background: var(--color01) url(../images/background-track-mobile.jpg) no-repeat;
     background-size: cover;
     background-position: center bottom;
 }
@@ -332,7 +332,7 @@ footer p {
 }
 
 /* Tablets */
-@media screen and (min-width: 426px) and (max-width: 769px) {
+@media screen and (min-width: 426px) {
     .button {
         width: 180px;
         font-size: 1.3em;
@@ -382,10 +382,19 @@ footer p {
 }
 
 /* Screen Computers */
-@media screen and (min-width: 769px) and (max-width: 1025px) {
+@media screen and (min-width: 769px) {
     main {
         background-color: rgb(201, 0, 0);
     }
+
+    header nav ul {
+        display: flex;
+    }
+
+    header nav span#burger-menu {
+        display: none;
+    }
+    
 }
 
 /* Large Screen Computers */
