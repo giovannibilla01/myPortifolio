@@ -16,7 +16,7 @@
     --color04: #5E9FF2;
     --color05: #89ABD9;
     --color06: #F2F2F2;
-    --color06-1: #f2f2f270;
+    --color06-1: #f2f2f298;
 }
 
 *, *:after, *:before {
@@ -43,11 +43,18 @@ h1, h2, h3, .button {
     color: var(--color01);
 }
 
-p {
+p, div.project-desc {
     font-size: 1.2em;
     text-indent: 1.5em;
     line-height: 1.5em;
+}
+
+p {
     margin: 1em 0em;
+}
+
+div.project-desc {
+    overflow: hidden;
 }
 
 .button {
@@ -292,8 +299,14 @@ main section#projects div div div.projects {
     background-position: center top;
 }
 
-main section#projects div div div.projects * {
-    display: none;
+main section#projects div div div.projects div.project-desc {
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+    border-radius: 10px 10px 0px 0px;
+    
+    background-color: var(--color06-1);
+    backdrop-filter: blur(10px);
 }
 
 main section#projects div div div.projects-link {
@@ -403,7 +416,7 @@ footer p {
 /* Screen Computers */
 @media screen and (min-width: 769px) {
     main {
-        width: 80vw;
+        width: 70vw;
     }
 
     header nav ul {
@@ -438,7 +451,7 @@ footer p {
     main section#projects div div div.projects-link {
         height: 8vh;
     }
-    
+
     main section#projects div div div.projects-link * {
         font-size: 1em;
     }
@@ -448,7 +461,7 @@ footer p {
 @media screen and (min-width: 1025px) {
 
     main {
-        width: 75vw;
+        width: 65vw;
     }
 
     main section#initial {
@@ -477,7 +490,7 @@ footer p {
 /* Television */
 @media screen and (min-width: 2561px) {
     main {
-        width: 60vw;
+        width: 55vw;
     }
 
     main section#initial div img {
