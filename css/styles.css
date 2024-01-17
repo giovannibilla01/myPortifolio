@@ -43,6 +43,13 @@ h1, h2, h3, .button {
     color: var(--color01);
 }
 
+p {
+    font-size: 1.2em;
+    text-indent: 1.5em;
+    line-height: 1.5em;
+    margin: 1em 0em;
+}
+
 .button {
     display: flex;
     align-items: center;
@@ -302,6 +309,10 @@ main section#projects div div div.projects-link {
     background-color: var(--color01);
 }
 
+main section#projects div div div.projects-link a:hover {
+    font-weight: bolder;
+}
+
 main section#skills ul#technologies {
     columns: 2;
     margin: 1em 0em;
@@ -371,6 +382,10 @@ footer p {
     main section#initial div a#github { display: flex; }
     main section#initial div a#email { display: flex; }
 
+    main section#about {
+        min-height: 70vh;
+    }
+
     main section#projects div#project-container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -411,7 +426,22 @@ footer p {
         background-size: cover;
         background-position: right bottom;
     }
+
+    main section#projects div div {
+        max-width: 335px;
+    }
+
+    main section#projects div div div.projects {
+        height: 18vh;
+    }
+
+    main section#projects div div div.projects-link {
+        height: 8vh;
+    }
     
+    main section#projects div div div.projects-link * {
+        font-size: 1em;
+    }
 }
 
 /* Large Screen Computers */
@@ -441,10 +471,6 @@ footer p {
 
     main section#skills ul#technologies {
         columns: 4;
-    }
-
-    main section#about {
-        min-height: 75vh;
     }
 }
 
