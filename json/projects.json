@@ -1,0 +1,33 @@
+[
+    {
+        "name" : "Teste Personalidade",
+        "description" : "Modelo de aplicação Web para teste de personalidade, criado em PHP, HTML5, CSS3 e Javascript. Utilizando bootstrap e dados mokados em JSON.",
+        "thumbnail" : "projects/bfp-test/thumbnail.jpg",
+        "codeLink" : "https://github.com/giovannibilla01/bfpTest",
+        "projectLink" : "https://bfpteste.com"
+    },
+    
+    {
+        "name" : "FlickFlair",
+        "description" : "Aplicação Web para criticas de filmes, criado em PHP, utilizando DAO. Utilizando bootstrap e banco de dados MySQL.",
+        "thumbnail" : "projects/flickflair/thumbnail.jpg",
+        "codeLink" : "https://github.com/giovannibilla01/flickflair",
+        "projectLink" : ""
+    },
+
+    {
+        "name" : "Site Resposivo",
+        "description" : "Modelo de Web Site responsivo, criado em HTML5, CSS3 e Javascript. Objetivo de demonstrar efeitos de resposividade.",
+        "thumbnail" : "projects/responsive-website/thumbnail.jpg",
+        "codeLink" : "https://github.com/giovannibilla01/responsive-website",
+        "projectLink" : "https://giovannibilla01.github.io/responsive-website"
+    },
+
+    {
+        "name" : "Login Page",
+        "description" : "Pagina modelo de login (Front end). Utilizado HTML5 e CSS3.",
+        "thumbnail" : "projects/login-page/thumbnail.jpg",
+        "codeLink" : "https://github.com/giovannibilla01/login-page-ccs-html",
+        "projectLink" : "https://giovannibilla01.github.io/login-page-ccs-html"
+    }
+]

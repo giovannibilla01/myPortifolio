@@ -1,0 +1,49 @@
+[
+    {
+        "icon" : "devicon-csharp-plain",
+        "name" : "C#",
+        "description" : "c# é top"
+    },
+    
+    {
+        "icon" : "devicon-php-plain",
+        "name" : "PHP",
+        "description" : "php é dahora"
+    },
+    
+    {
+        "icon" : "devicon-laravel-plain-wordmark",
+        "name" : "Laravel",
+        "description" : "php é dahora"
+    },
+    
+    {
+        "icon" : "devicon-mysql-plain-wordmark",
+        "name" : "MySQL",
+        "description" : "php é dahora"
+    },
+    
+    {
+        "icon" : "devicon-html5-plain-wordmark",
+        "name" : "HTML5",
+        "description" : "php é dahora"
+    },
+    
+    {
+        "icon" : "devicon-css3-plain-wordmark",
+        "name" : "CSS3",
+        "description" : "php é dahora"
+    },
+    
+    {
+        "icon" : "devicon-javascript-plain",
+        "name" : "JavaScript",
+        "description" : "php é dahora"
+    },
+    
+    {
+        "icon" : "devicon-git-plain-wordmark",
+        "name" : "Git / GitHub",
+        "description" : "php é dahora"
+    }
+]
