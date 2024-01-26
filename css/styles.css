@@ -119,10 +119,6 @@ header nav span#burger-menu:hover {
     cursor: pointer;
 }
 
-header nav menu#fixed-menu {
-    display: none;
-}
-
 header nav ul, footer ul {
     display: flex;
     flex-direction: row;
@@ -275,7 +271,7 @@ main section#projects div h3, a {
 }
 
 main section#projects div#project-container {
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -283,6 +279,7 @@ main section#projects div#project-container {
 
 main section#projects div div.project-box {
     justify-content: center;
+    margin: 1em;
 }
 
 main section#projects div div div.projects {
@@ -342,7 +339,7 @@ main section#skills div ul li i:hover {
     cursor: pointer;
 }
 
-main section#skills div div#skill-desc {
+main section#skills div div.skill-desc {
     display: none;
 }
 
@@ -380,7 +377,7 @@ footer p {
     }
 
     main section#initial div img {
-        width: 30vw;
+        width: 25vw;
     }
     
     main section#initial div h1 {
@@ -455,6 +452,32 @@ footer p {
     main section#projects div div div.projects-link * {
         font-size: 1em;
     }
+
+    main section#skills div#hard-skills {
+        width: 100%;
+        position: relative;
+    }
+
+    main section#skills div#hard-skills ul#technologies {
+        width: 60%;
+    }
+
+    main section#skills div#hard-skills div.skill-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 40%;
+        height: 100%;
+        position: absolute;
+ 
+        left: 60%;
+        top: 0px
+    }
+
+    main section#skills div#hard-skills div.skill-desc p {
+        text-indent: 0em;
+    }
 }
 
 /* Large Screen Computers */
@@ -494,6 +517,6 @@ footer p {
     }
 
     main section#initial div img {
-        width: 20vw;
+        width: 15vw;
     }
 }
