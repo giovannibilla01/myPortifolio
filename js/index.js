@@ -1,10 +1,18 @@
 const menu = document.getElementById("floating-menu")
 const projectDescription = document.getElementsByClassName("project-desc");
+const skillDescription = document.getElementsByClassName("skill-desc");
 
 menu.style.display = 'none';
 
 for (let i = 0; i < projectDescription.length; i = i + 1 ) {
     projectDescription[i].style.display = 'none';
+}
+
+for (let i = 0; i < skillDescription.length; i = i + 1 ) {
+    arrayChildrenDesc = skillDescription[i].children;
+    for (let i = 0; i < arrayChildrenDesc.length; i = i + 1) {
+        arrayChildrenDesc[i].style.display = 'none';
+    }
 }
 
 window.addEventListener("resize", () => {
@@ -14,6 +22,13 @@ window.addEventListener("resize", () => {
 
     for (let i = 0; i < projectDescription.length; i = i + 1 ) {
         projectDescription[i].style.display = 'none';
+    }
+
+    for (let i = 0; i < skillDescription.length; i = i + 1 ) {
+        arrayChildrenDesc = skillDescription[i].children;
+        for (let i = 0; i < arrayChildrenDesc.length; i = i + 1) {
+            arrayChildrenDesc[i].style.display = 'none';
+        }
     }
 });
 
@@ -38,5 +53,30 @@ function showProjectDesc (number) {
 function hideProjectDesc () {
     for (let i = 0; i < projectDescription.length; i = i + 1 ) {
         projectDescription[i].style.display = 'none';
+    }   
+}
+
+function showSkillDesc (number) {
+    for (let i = 0; i < skillDescription.length; i = i + 1 ) {
+        if (i == number) {
+            arrayChildrenDesc = skillDescription[i].children;
+            for (let i = 0; i < arrayChildrenDesc.length; i = i + 1) {
+                arrayChildrenDesc[i].style.display = 'block';
+            }
+        } else {
+            arrayChildrenDesc = skillDescription[i].children;
+            for (let i = 0; i < arrayChildrenDesc.length; i = i + 1) {
+                arrayChildrenDesc[i].style.display = 'none';
+            }
+        }
+    }
+}
+
+function hideSkillDesc () {
+    for (let i = 0; i < skillDescription.length; i = i + 1 ) {
+        arrayChildrenDesc = skillDescription[i].children;
+        for (let i = 0; i < arrayChildrenDesc.length; i = i + 1) {
+            arrayChildrenDesc[i].style.display = 'none';
+        }
     }   
 }
