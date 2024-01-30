@@ -2,48 +2,48 @@
     {
         "icon" : "devicon-csharp-plain",
         "name" : "C#",
-        "description" : "c# é top"
+        "description" : "C# Completo Programação Orientada a Objetos - 2023 <br> Duração: 38 horas <br> Instrutor: Nelio Alves"
     },
     
     {
         "icon" : "devicon-php-plain",
         "name" : "PHP",
-        "description" : "php é dahora"
+        "description" : "PHP – Zero à Maestria (Orientação a objetos) - 2024 <br> Duração: 33 horas <br> Instrutor: Matheus Battisti"
     },
     
     {
         "icon" : "devicon-laravel-plain-wordmark",
         "name" : "Laravel",
-        "description" : "php é dahora"
+        "description" : "Desenvolvimento Web Avançado com Laravel e Vue.JS - Em Curso <br> Duração: 57 horas <br> Instrutor: Jorge Sant Ana"
     },
     
     {
         "icon" : "devicon-mysql-plain-wordmark",
         "name" : "MySQL",
-        "description" : "php é dahora"
+        "description" : "Expertise adquirida durante a execução de projetos pessoais e durante a experiência profissional"
     },
     
     {
         "icon" : "devicon-html5-plain-wordmark",
         "name" : "HTML5",
-        "description" : "php é dahora"
+        "description" : "CURSO HTML5 E CSS3 - 2023 <br> Duração 40 horas <br> Instrutor: Gustavo Guanabara"
     },
     
     {
         "icon" : "devicon-css3-plain-wordmark",
         "name" : "CSS3",
-        "description" : "php é dahora"
+        "description" : "CURSO HTML5 E CSS3 - 2023 <br> Duração 40 horas <br> Instrutor: Gustavo Guanabara"
     },
     
     {
         "icon" : "devicon-javascript-plain",
         "name" : "JavaScript",
-        "description" : "php é dahora"
+        "description" : "Utilizado em projetos práticos"
     },
     
     {
         "icon" : "devicon-git-plain-wordmark",
         "name" : "Git / GitHub",
-        "description" : "php é dahora"
+        "description" : "Git e GitHub do Básico ao avançado - 2023 <br> Duração: 8,5 horas <br> Instrutor: Matheus Battisti"
     }
 ]
